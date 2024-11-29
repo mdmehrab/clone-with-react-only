@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Count = () => {
   const [count, setCount] = useState(0);
@@ -13,7 +13,7 @@ const Count = () => {
 
   const hendeldcount = () => {
     if (count > MIN_VALUE) {
-      setCount(count - 1);
+      setCount(count - 2);
     }
   };
 
@@ -22,9 +22,9 @@ const Count = () => {
   };
 
   const getMassage = () => {
-    if (count === MAX_VALUE) return "Maximum value reached";
-    if (count === MIN_VALUE) return "Minimum value reached";
-    return "";
+    if (count === MAX_VALUE) return 'Maximum value reached';
+    if (count === MIN_VALUE) return 'Minimum value reached';
+    return '';
   };
 
   return (
